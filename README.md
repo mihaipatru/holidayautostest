@@ -26,16 +26,22 @@ touch features/main_page.booking_menu
 touch features/test_steps/booking_menu_steps.js
 ```
 
-## Feature: Main page booking fields functionality
-Scenario: Navigating to the departure hour field and interacting with the dropdown
-    Given the user is on the on the "Main page"
-    When the user clicks the "Down arrow" in the "Departure hour field" to open the dropdown menu
-    And the user selects the "Pick up location field"
-    And the user presses the "TAB key" twice
-    And the user navigates to the "Departure hour field"
-    Then the "Departure hour field" should display the dropdown menu
-    When the user presses the "Up arrow" in the "Departure hour field"
-    Then the "Departure hour field" dropdown will close
+## Feature: Main page booking fields functionality ----- ## This should be saved and accessed from the local repo)
+
+Scenario: Selecting pickup and drop-off details and searching for cars
+    When the user enters a "Pick up location" in the "Pick up location field"
+    And the user selects a "Pick-up date" in the "Pick-up date field"
+    And the user selects a "Pick-up hour" in the "Pick-up hour field"
+    And the user selects a "Drop-off date" in the "Drop-off date field"
+    And the user selects a "Drop-off hour" in the "Drop-off hour field"
+    And the user clicks the "Search button"
+    Then a list of available cars is displayed on the "Search results page"
+    And the results page shows the pick-up date as "<Pick-up date>"
+    And the results page shows the drop-off date as "<Drop-off date>"
+    And the results page shows the pick-up hour as "<Pick-up hour>"
+    And the results page shows the drop-off hour as "<Drop-off hour>"
+    
+
 
 ## Expected result:
 # The "Departure hour field" dropdown menu closes
