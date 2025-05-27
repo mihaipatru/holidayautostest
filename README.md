@@ -49,6 +49,6 @@ holidayautotest/
 
 
 ## Test Report
-Detailed manual test report can be found in (./reports/report.html).
+Detailed test report can be found in (./reports/report.html).
 
 
