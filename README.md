@@ -65,5 +65,7 @@ And the "Drop-off date" is the same as the "<Drop-off date>"
 And the "Pick-up hour" is the same as "<Pick-up hour>"
 And the "Drop-off hour" is the same as "<Drop-off hour>"
 
+## Manual Test Report
+Detailed manual test report can be found [here](./docs/manual_test_report.md).
 
 
