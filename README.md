@@ -40,11 +40,4 @@ Scenario: Selecting pickup and drop-off details and searching for cars
     And the results page shows the drop-off date as "<Drop-off date>"
     And the results page shows the pick-up hour as "<Pick-up hour>"
     And the results page shows the drop-off hour as "<Drop-off hour>"
-    
 
-
-## Expected result:
-# The "Departure hour field" dropdown menu closes
-
-## Result:
-# The "Departure hour field" dropdown menu requires an additional click to close
