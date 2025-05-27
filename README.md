@@ -43,15 +43,27 @@ Scenario: Selecting pickup and drop-off details and searching for cars
     And the results page shows the pick-up hour as "<Pick-up hour>"
     And the results page shows the drop-off hour as "<Drop-off hour>"
 
- <!-- Test2
- Action: On the second page, identify the cheapest car price. --->
+<!-- Test2
+Action: On the second page, identify the cheapest car price. --->
+Scenario: Selecting the cheapest car price
+<!-- Prerequisite: Test 1 has been performed -->
+Given the user opens the "Car hire search results page"
+And clicks the "Price (low to high) button"
+Then the cheapest car price should be identified from the list
+<!-- The first car price from the list is checked against the .js array that contains the car prices that match the criteria to make sure the cheapest was indeed selected-->
+
+<!-- Test3
+Action: Select the cheapest car.--->
 Scenario: Selecting the cheapest car price
 <!-- Prerequisite: Test 1 has been performed -->
 Given the user opens the "Car hire search results page"
 And clicks the "Price (low to high) button"
 And clicks the "Select" button for the first car in the list
 Then the selected car should be the cheapest option
-<!-- The car price is checked against the .js array that contains the car price to make sure the cheapest was indeed selected-->
+And the "Pick-up date" is the same as the "<Pick-up date>"
+And the "Drop-off date" is the same as the "<Drop-off date>"
+And the "Pick-up hour" is the same as "<Pick-up hour>"
+And the "Drop-off hour" is the same as "<Drop-off hour>"
 
 
 
