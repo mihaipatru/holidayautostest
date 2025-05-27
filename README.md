@@ -25,45 +25,28 @@ mkdir -p features/test_steps
 touch features/main_page.booking_menu
 touch features/test_steps/booking_menu_steps.js
 ```
-<!-- Test1
- Action: On the first page, run a search against a location and a date range to return a list of cars. -->
-## Feature: Main page car hire search functionality 
-<!-- This should be saved and accessed from the local repo -->
 
-Scenario: Selecting pickup and drop-off details and searching for cars
-    Given the user enters a "Pick up location" in the "Pick up location field"
-    And selects a "Pick-up date" in the "Pick-up date field"
-    And selects a "Pick-up hour" in the "Pick-up hour field"
-    And selects a "Drop-off date" in the "Drop-off date field"
-    And selects a "Drop-off hour" in the "Drop-off hour field"
-    And clicks the "Search button"
-    Then a list of available cars is displayed on the "Car hire search results page"
-    And the results page shows the pick-up date as "<Pick-up date>"
-    And the results page shows the drop-off date as "<Drop-off date>"
-    And the results page shows the pick-up hour as "<Pick-up hour>"
-    And the results page shows the drop-off hour as "<Drop-off hour>"
+### Folder structure
+holidayautotest/
+├── features/
+│   ├── car_search.feature
+│   ├── cheapest_car_identification.feature
+│   ├── cheapest_car_selection.feature
+│   └── step_definitions/
+│       ├── car_search_steps.js
+│       ├── cheapest_car_identification_steps.js
+│       └── cheapest_car_selection_steps.js
+├── docs/
+│   └── manual_test_report.html
+├── package.json
+├── README.md
 
-<!-- Test2
-Action: On the second page, identify the cheapest car price. --->
-Scenario: Selecting the cheapest car price
-<!-- Prerequisite: Test 1 has been performed -->
-Given the user opens the "Car hire search results page"
-And clicks the "Price (low to high) button"
-Then the cheapest car price should be identified from the list
-<!-- The first car price from the list is checked against the .js array that contains the car prices that match the criteria to make sure the cheapest was indeed selected-->
+| Feature File                                   | Description                                    |
+| ---------------------------------------------- | ---------------------------------------------- |
+| `features/car_search.feature`                  | Tests the basic car hire search functionality. |
+| `features/cheapest_car_identification.feature` | Identifies the cheapest car after sorting.     |
+| `features/cheapest_car_selection.feature`      | Selects and verifies the cheapest car option.  |
 
-<!-- Test3
-Action: Select the cheapest car.--->
-Scenario: Selecting the cheapest car price
-<!-- Prerequisite: Test 1 has been performed -->
-Given the user opens the "Car hire search results page"
-And clicks the "Price (low to high) button"
-And clicks the "Select" button for the first car in the list
-Then the selected car should be the cheapest option
-And the "Pick-up date" is the same as the "<Pick-up date>"
-And the "Drop-off date" is the same as the "<Drop-off date>"
-And the "Pick-up hour" is the same as "<Pick-up hour>"
-And the "Drop-off hour" is the same as "<Drop-off hour>"
 
 ## Manual Test Report
 Detailed manual test report can be found [here](./docs/manual_test_report.md).

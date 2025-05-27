@@ -1,0 +1,28 @@
+{
+  "name": "holidayautostest",
+  "version": "1.0.0",
+  "description": "```bash\r git clone https://github.com/mihaipatru/holidayautotest.git\r cd holidayautotest\r ```\r ### Requirements\r ```bash\r npm init -y\r npm install @cucumber/cucumber --save-dev\r npm install puppeteer --save-dev\r npm install eslind --save-dev\r npx eslint --init\r ```\r ### Starting ESLint:\r ```bash\r npx eslint --init\r ```",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mihaipatru/holidayautostest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mihaipatru/holidayautostest/issues"
+  },
+  "homepage": "https://github.com/mihaipatru/holidayautostest#readme",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.3.0",
+    "eslint": "^9.27.0",
+    "puppeteer": "^24.9.0"
+  }
+}
