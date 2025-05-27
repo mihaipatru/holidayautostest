@@ -35,9 +35,9 @@ holidayautotest/
 │   └── step_definitions/
 │       ├── car_search_steps.js
 │       ├── cheapest_car_identification_steps.js
-│       └── cheapest_car_selection_steps.js
-├── docs/
-│   └── manual_test_report.html
+│       └── cheapest_car_selection_steps.
+├── reports
+│		└── report.html
 ├── package.json
 ├── README.md
 
@@ -48,7 +48,7 @@ holidayautotest/
 | `features/cheapest_car_selection.feature`      | Selects and verifies the cheapest car option.  |
 
 
-## Manual Test Report
-Detailed manual test report can be found [here](./docs/manual_test_report.md).
+## Test Report
+Detailed manual test report can be found in (./reports/report.html).
 
 
