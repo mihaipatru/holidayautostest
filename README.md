@@ -1,12 +1,32 @@
-## How to Run the Test
+# How to Run the Test
 
-## Clone this repository:
+# Setup:
+### Cloning
 ```bash
 git clone https://github.com/mihaipatru/holidayautotest.git
 cd holidayautotest
 ```
+### Requirements
+```bash
+npm init -y
+npm install @cucumber/cucumber --save-dev
+npm install puppeteer --save-dev
+npm install eslind --save-dev
+npx eslint --init
+```
+### Starting ESLint:
+```bash
+npx eslint --init
+```
 
-## Feature: Main page booking fields
+### Creating structure
+```bash
+mkdir -p features/test_steps
+touch features/main_page.booking_menu
+touch features/test_steps/booking_menu_steps.js
+```
+
+## Feature: Main page booking fields functionality
 Scenario: Navigating to the departure hour field and interacting with the dropdown
     Given the user is on the on the "Main page"
     When the user clicks the "Down arrow" in the "Departure hour field" to open the dropdown menu
@@ -18,7 +38,7 @@ Scenario: Navigating to the departure hour field and interacting with the dropdo
     Then the "Departure hour field" dropdown will close
 
 ## Expected result:
-The "Departure hour field" dropdown menu closes
+# The "Departure hour field" dropdown menu closes
 
 ## Result:
-The "Departure hour field" dropdown menu requires an additional click to close
+# The "Departure hour field" dropdown menu requires an additional click to close
