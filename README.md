@@ -65,17 +65,29 @@ touch features/test_steps/booking_menu_steps.js
 
 ### Folder structure
 holidayautotest/
+
 ├── features/
+
 │   ├── car_search.feature
+
 │   ├── cheapest_car_identification.feature
+
 │   ├── cheapest_car_selection.feature
+
 │   └── step_definitions/
+
 │       ├── car_search_steps.js
+
 │       ├── cheapest_car_identification_steps.js
+
 │       └── cheapest_car_selection_steps.
+
 ├── reports
+
 │		└── report.html
+
 ├── package.json
+
 ├── README.md
 
 | Feature File                                   | Description                                    |
