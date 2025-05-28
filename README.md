@@ -37,7 +37,7 @@ The web application under test is deployed and accessible at a known URL during 
 
 ### Test Assumptions
 
-The car hire search results are correctly sorted by price when clicking the “Price (low to high)” button
+The car hire search results are correctly sorted by price when clicking the “Price (low to high)” button;
 
 The input fields (pickup location, dates, hours) accept valid and correctly formatted data;
 
