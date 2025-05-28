@@ -20,13 +20,19 @@ npx eslint --init
 ```
 
 ### Setup/Technical Assumptions
-# Node.js is installed on the machine running the tests
-# npm (Node Package Manager) is available for installing dependencies
-# Puppeteer is configured to run with Chromium or an installed Chrome browser
-# The GitHub repository is cloned locally with full file permissions
-# ESLint is set up to ensure code quality checks
-# The project dependencies are installed via npm install before running tests
-# The web application under test is deployed and accessible at a known URL during test execution
+Node.js is installed on the machine running the tests
+
+npm (Node Package Manager) is available for installing dependencies
+
+Puppeteer is configured to run with Chromium or an installed Chrome browser
+
+The GitHub repository is cloned locally with full file permissions
+
+ESLint is set up to ensure code quality checks
+
+The project dependencies are installed via npm install before running tests
+
+The web application under test is deployed and accessible at a known URL during test execution
 
 
 ### Test Assumptions
