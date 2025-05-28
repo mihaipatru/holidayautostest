@@ -20,7 +20,7 @@ npx eslint --init
 ```
 
 ### Setup/Technical Assumptions
-Node.js is installed on the machine running the tests;
+Node.js is installed on the machine running the tests with cucumber;
 
 npm (Node Package Manager) is available for installing dependencies;
 
@@ -99,5 +99,6 @@ holidayautotest/
 
 ## Test Report
 Detailed test report can be found in (./reports/report.html).
+Please download and open the report.html file for a readable report version of the file.
 
 
