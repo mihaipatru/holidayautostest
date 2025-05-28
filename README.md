@@ -99,6 +99,7 @@ holidayautotest/
 
 ## Test Report
 Detailed test report can be found in (./reports/report.html).
+
 Please download and open the report.html file for a readable report version of the file.
 
 
